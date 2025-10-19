@@ -1,0 +1,112 @@
+body{
+    width: 1280px;
+    border: 10px;
+    border-style: solid;
+    border-color: rgb(168, 168, 168);
+    height: 800px;
+    margin: 0;
+    
+}
+.camas {
+    height: 400px;
+    padding: 10px;
+}
+.camas::first-letter {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: darkblue;
+}
+
+/* Camas en posiciones pares del primer DIV */
+.camas:first-of-type span:nth-child(even) {
+    background-color: #F1FEE3;
+}
+
+#sabio {
+    background-color: antiquewhite;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 2px;
+    width: 70px;
+    height: 300px;
+    margin-left: 118px;
+    margin-right: 118px;
+}
+#gruñon {
+    background-color: aquamarine;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 2px;
+    width: 70px;
+    height: 300px;
+    margin-left: 118px;
+    margin-right: 118px;
+    position: relative;
+    top: 180px;
+    color: white; /* Estilo propio */
+}
+#feliz {
+    background-color: azure;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 2px;
+    width: 70px;
+    height: 300px;
+    margin-left: 118px;
+    margin-right: 118px;
+}
+#dormilon {
+    background-color: blanchedalmond;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 2px;
+    width: 70px;
+    height: 300px;
+    margin-left: 118px;
+    margin-right: 118px;
+}
+#timido {
+    background-color: burlywood;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 2px;
+    width: 80px;
+    height: 300px;
+    margin-left: 158px;
+    margin-right: 158px;
+    position: absolute;
+    top: 100px;
+    left: 800px;
+    opacity: 0.2; /* capa invisible */
+}
+#mocoso {
+    background-color: cornsilk;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 2px;
+    width: 80px;
+    height: 300px;
+    margin-left: 158px;
+    margin-right: 158px;
+    float: left;
+}
+#mudito {
+    background-color: darkgoldenrod;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 2px;
+    width: 80px;
+    height: 300px;
+    margin-left: 158px;
+    margin-right: 158px;
+    float: left;
+}
+
+/* EJERCICIO 14: Cálculo del DIV contenedor */
+    /* Width del DIV = (4 camas × 100px) + (4 camas × 40px margen horizontal) + (2px border) 
+        = 400px + 160px + 2px = 562px
+        Espacio total = 562px + 2px border = 564px */
+    
+    /* EJERCICIO 15: Con padding adicional */
+    /* Width del DIV = 562px - 30px (padding izq y der) = 532px
+        Espacio total = 532px + 2px border + 30px padding = 564px */
