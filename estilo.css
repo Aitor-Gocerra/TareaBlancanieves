@@ -19,7 +19,7 @@ body{
 
 /* Camas en posiciones pares del primer DIV */
 .camas:first-of-type span:nth-child(even) {
-    background-color: #F1FEE3;
+    background-color: #51940a;
 }
 
 #sabio {
