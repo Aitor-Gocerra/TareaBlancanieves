@@ -10,6 +10,7 @@ body{
 .camas {
     height: 400px;
     padding: 10px;
+    background-color: aliceblue;
 }
 .camas::first-letter {
     font-size: 1.5em;
