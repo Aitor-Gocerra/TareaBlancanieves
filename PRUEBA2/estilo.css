@@ -1,6 +1,12 @@
 html{
     background-color: black;
 }
+/* TAREA 1: La habitación (body)
+    - Ancho: 1280px
+    - Alto: 800px
+    - Borde: 1px (paredes)
+    - Espacio útil = 1280px - 2px (bordes) = 1278px
+*/
 body{
     width: 1280px;
     height: 800px;
@@ -8,34 +14,56 @@ body{
     margin: 0 auto;
     border: 1px solid black;
 }
+/* TAREA 12: Elementos en posición par tienen fondo beige */
 body :nth-child(even) {
   background-color: beige;
 }
+/* TAREA 3: Contenedor para agrupar las camas */
 .camas{
     padding: 5px;
 }
+/* TAREA 2 y 3: Estilos para todas las camas (span y div)
+    - Ancho total: 100px (80px + 20px de padding)
+    - Alto: 300px
+    - Los span son elementos en línea (display: inline-block permite dimensiones)
+    - Los div son elementos en bloque
+*/
 .camas > span, .camas > div{
     width: 80px;
     height: 300px;
     background-color: cornflowerblue;
     display: inline-block;
-    padding: 2px 10px 0 10px;
+    /* TAREA 4: Espacio entre el colchón y su borde (padding) */
+    padding: 2px 10px 0 10px;  /* 2px arriba, 10px izq/der, 0px abajo */
     border: 1px solid black;
+    /* TAREA 5: Separación entre camas (margin) */
     margin: 40px 30px;
 }
+/* TAREA 11: Primera letra de cada nombre con estilo diferente */
 .camas div::first-letter, .camas span::first-letter {
     font-size: 1.5em;
     font-weight: bold;
     color: darkblue;
 }
+/* TAREA 12: Camas en posición par del primer DIV tienen color especial */
 .camas :nth-child(even){
     background-color: #f1fee3;
 }
+/* TAREA 6-7 y 13: Cama de Gruñón
+    - TAREA 13: Color de fondo especial #D6234A (mayor prioridad con id)
+    - TAREA 7: Posicionamiento absoluto (no relativo como en TAREA 6)
+    - Colocado cerca de la pared derecha (900px desde la izquierda)
+*/
 #gruñon{
     background-color: #D6234A;
     position: relative;
     left: 900px;
 }
+/* TAREA 10: Cama de Tímido con capa de invisibilidad
+    - Posicionamiento absoluto
+    - Opacity 0.2 simula la capa de invisibilidad
+    - Ubicación: 1150px desde la izquierda, 210px desde arriba
+*/
 #timido{
     position: absolute;
     left: 1150px;
@@ -58,3 +86,12 @@ body :nth-child(even) {
     top:500px;
     right: 379px;
 }
+
+/* TAREA 14: Cálculo del DIV contenedor (primer grupo):
+    Width del DIV = (100px × 4 camas) + (60px × 4 márgenes) + 2px bordes
+    Width = 400px + 240px + 2px = 642px
+    Espacio total = 642px
+    
+    TAREA 15: Con padding de 15px:
+    Width del DIV = 642px + 30px (15px × 2) = 672px
+    Espacio total = 672px */
